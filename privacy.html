@@ -1,1 +1,86 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for the OpenAthens Resource Viewer Chrome extension.">
+  <title>Privacy Policy | OpenAthens Resource Viewer</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f8fb; color: #1f2937; line-height: 1.75; }
+    header { background: #18365c; color: #fff; padding: 48px 24px 42px; }
+    .wrap { max-width: 820px; margin: 0 auto; }
+    header h1 { margin: 0 0 6px; font-size: clamp(1.7rem, 4vw, 2.4rem); line-height: 1.3; letter-spacing: -.02em; }
+    header p { margin: 0; color: #dbe7f7; }
+    main { background: #fff; max-width: 820px; margin: 28px auto 48px; padding: 34px 42px; border: 1px solid #e2e8f0; border-radius: 12px; box-shadow: 0 4px 18px rgba(20,35,60,.04); }
+    h2 { font-size: 1.2rem; line-height: 1.4; margin: 2rem 0 .5rem; color: #17365d; }
+    h2:first-child { margin-top: 0; }
+    p { margin: .5rem 0 1rem; }
+    ul { padding-left: 1.4rem; margin: .4rem 0 1rem; }
+    li { margin: .45rem 0; }
+    a { color: #145e9f; overflow-wrap: anywhere; }
+    code { overflow-wrap: anywhere; background: #f0f4fa; border-radius: 4px; padding: .1rem .25rem; font-size: .93em; }
+    .updated { color: #516174; font-size: .95rem; }
+    .note { background: #f1f6fc; border-left: 3px solid #3a76a9; padding: 12px 16px; border-radius: 4px; }
+    footer { max-width: 820px; margin: 0 auto 42px; padding: 0 24px; font-size: .9rem; color: #66758a; text-align: center; }
+    @media (max-width: 700px) { header { padding: 34px 18px; } main { margin: 0; padding: 26px 20px 36px; border-radius: 0; border-left: 0; border-right: 0; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Privacy Policy</h1>
+      <p>OpenAthens Resource Viewer</p>
+    </div>
+  </header>
+  <main>
+    <p class="updated"><strong>Last updated:</strong> October 27, 2026</p>
+    <p>This Privacy Policy explains how the OpenAthens Resource Viewer Chrome extension (the “Extension”) handles information while helping users access library electronic resources through OpenAthens.</p>
+
+    <h2>1. Information the Extension Uses</h2>
+    <ul>
+      <li><strong>OpenAthens session information:</strong> The Extension reads the <code>oa-session</code> cookie associated with <code>my.openathens.net</code> to check apparent sign-in status and display the institution name, when available. The cookie may contain authentication-related information or identifiers. The Extension does not ask users for their OpenAthens password.</li>
+      <li><strong>Available electronic resources:</strong> When the database list is opened, the Extension requests resources from <code>https://my.openathens.net/api/v1/services</code> using the browser's existing OpenAthens session. The response may include resource names, descriptions, links and favourite indicators. The content and destination URLs of the links displayed in the database list depend on how the institution has configured OpenAthens.</li>
+      <li><strong>Current webpage URL:</strong> When the user clicks “Athenize this URL,” the Extension accesses the URL of the active tab to create a library-configured authentication link. It does not continuously record browsing history.</li>
+      <li><strong>Extension settings:</strong> The Extension saves user-selected options, such as the database list display mode, institutional sign-in URL, redirector prefix, Custom SAML rules and proxy-force rules.</li>
+    </ul>
+
+    <h2>2. How Information Is Used</h2>
+    <p>The information above is used only to provide the Extension's features: showing OpenAthens session status, displaying available electronic resources, saving user preferences and generating access links on user request. The Extension does not use this information for advertising, user profiling or analytics.</p>
+
+    <h2>3. Services That Receive Information</h2>
+    <ul>
+      <li><strong>OpenAthens:</strong> When requesting the database list, the browser communicates with OpenAthens and may send the existing session cookie as part of that request. Opening sign-in and sign-out pages also communicates with OpenAthens or the sign-in service configured by the user.</li>
+      <li><strong>Library-configured authentication services:</strong> When the user clicks “Athenize this URL,” the active page URL is incorporated into a new link and opened in another tab. The destination service may therefore receive the original URL, including its path and query parameters. The chosen service may be operated by OpenAthens, a library or another authentication provider.</li>
+      <li><strong>Google Chrome Sync:</strong> The Extension uses <code>chrome.storage.sync</code> for settings. If Chrome synchronization is enabled, Google may synchronize these preferences between the user's signed-in browsers under Google's own policies.</li>
+    </ul>
+    <p>The Extension developer does not operate a server that receives session cookies, browsing URLs, resource lists or extension settings, and does not sell or share these data for advertising.</p>
+
+    <h2>4. Storage and Retention</h2>
+    <p>The Extension does not separately save the OpenAthens session cookie or a browsing-history log to its own storage. Resource-list data is used in the Extension interface during the current view rather than saved as a persistent resource history. Extension preferences remain in Chrome's synchronization storage until changed or removed; any synchronized copies are subject to Chrome's account and data-management controls.</p>
+
+    <h2>5. Security and User Choices</h2>
+    <p>Connections made directly to the OpenAthens resource API use HTTPS. Authentication is provided by OpenAthens and the relevant institution; the Extension does not independently verify access rights or grant access to resources.</p>
+    <p>Users can change configuration in the Extension's Settings page and can stop using the Extension by disabling or uninstalling it. Users should avoid selecting “Athenize this URL” on pages whose URLs contain passwords, access tokens or other sensitive information, because the full URL may be sent to the configured authentication destination.</p>
+
+    <h2>6. External Services</h2>
+    <p>OpenAthens, Google Chrome and any library or authentication services opened by the user have their own privacy practices. This policy covers only the Extension's handling of information and does not govern those external services.</p>
+
+    <h2>7. Children’s Privacy</h2>
+    <p>The Extension is designed for access to institutional library resources and does not intentionally collect information from children for advertising or profiling.</p>
+
+    <h2>8. Changes to This Policy</h2>
+    <p>This Privacy Policy may be updated if the Extension's functionality or data practices change. The “Last updated” date above will reflect any changes.</p>
+
+    <h2>9. Contact</h2>
+    <p>For privacy-related questions, please use the developer contact information provided on the Extension's Chrome Web Store listing.</p>
+
+    <div class="note">
+      <strong>Independent project:</strong> This Extension is independently developed and is not affiliated with, endorsed by or supported by OpenAthens or Jisc. OpenAthens and Jisc are not involved in its development, operation or maintenance.
+    </div>
+  </main>
+  <footer>OpenAthens Resource Viewer · Privacy Policy</footer>
+</body>
+</html>
